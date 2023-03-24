@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(./img/flat-design-polygonal-background_23-2148901856.avif);
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  padding: 20px;
+  font-family: "Monoton";
+  font-style: italic;
+  font-size: 50px;
+  color: #570879c5;
+  
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  padding: 20px;
+  height: 15px;
+  width: 30px;
+  border-radius: 10px;
+  border: 1px solid #ffffff00;
+  background-color: transparent;
+  font-size: 20px;
+  transition: width 0.3s;
+}
+
+.search-btn {
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  background-color: #570879;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.search-btn,
+.search-input:focus {
+  outline: none;
+}
+
+.search-box.active .search-input {
+  width: 200px;
+  border: 1px solid #570879c5;
+}
+.search-box.active .search-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 9.5px;
+  transition: transform 0.3s case;
+}
+.poke-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+}
+.pokemon {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-image: url(./img/flat-design-polygonal-background_23-2148901856.avif);
+  background-position: center;
+  background-size: cover;
+}
+.poki-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.poki-info i {
+  color: #570879c5;
+}
+.img-container {
+  margin: 10px;
+  background-color: #976fd335;
+  border-radius: 50% 35% 50% 35%;
+}
+
+.img-container img {
+  width: 160px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.pokemon:hover .img-container img {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.poke-id {
+  background-color: #570879c5;
+  color: #fff;
+  border-radius: 10px;
+  padding: 3px 6px;
+}
+.small small {
+  padding: 5px;
+}
+.poke-type span,
+.small span {
+  padding-left: 5px;
+}
+.poke-type span{
+  text-transform: capitalize;
+}
+.poke-name {
+  font-family: "Monoton";
+  font-style: italic;
+  color: #21022ec5;
+}
